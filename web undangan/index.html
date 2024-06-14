@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Invitation</title>
+    <link rel="stylesheet" href="kehadiran.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kamu Di Undang</h1>
+        <p>Acara Ulang Tahun</p>
+        <h2>Flora Delviandina</h2>
+        <p>Date: Mei 25, 2024</p>
+        <p>Time: 3:00 PM</p>
+        <p>Tangerang, Dasana Indah RH 3/11</p>
+        <button id="rsvpButton">Login</button>
+    </div>
+
+    <div id="rsvpForm" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>From Kehadiran</h2>
+            <form id="form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="text">Alamat:</label>
+                <input type="text" id="alamat" name="alamat" required>
+                <label for="text">Pesan Ucapan:</label>
+                <input type="text" id="Pesan" name="pesan" required>
+                <div class="container">
+                    <form>
+                        <div class="checkbox-group">
+                            <input type="radio" id="hadir" name="rsvp" value="hadir">
+                            <label for="hadir">Hadir</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="radio" id="tidak-hadir" name="rsvp" value="tidak-hadir">
+                            <label for="tidak-hadir">Tidak Hadir</label>
+                        </div>
+                    </form>
+                    <form action="lokasi.html">
+                        <button type="submit">Submit</button>
+                    </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
