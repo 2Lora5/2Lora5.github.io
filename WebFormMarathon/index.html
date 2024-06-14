@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <button id="show-popup">Show Contact Form</button>
+    <div id="popup-form-container" style="display:none;">
+        <form>
+            <div class="form-row">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <span></span>
+            </div>
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <span></span>
+            </div>
+            <div class="form-row">
+                <label for="telephone">Telephone:</label>
+                <input type="number" id="telephone" name="telephone" required>
+                <span></span>
+            </div>
+            <div class="form-row">
+                <label for="message">Message:</label>
+                <textarea id="contact-form-message" name="message" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        function showPopupForm() {
+            document.getElementById("popup-form-container").style.display = "block";
+        }
+
+        function hidePopupForm() {
+            document.getElementById("popup-form-container").style.display = "none";
+        }
+
+        document.getElementById("show-popup").addEventListener("click", showPopupForm);
+    </script>
+</body>
+</html>
